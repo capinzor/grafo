@@ -11,43 +11,15 @@
 
 </head>
 <body>
+  <canvas id="sitemap" width="1366" height="435" class="" style="opacity: 1; display: inline;"></canvas>
+  <script src="jquery-1.6.1.min.js"></script>
+  <!-- <script src="./arbor.js_files/jquery.address-1.4.min.js"></script> -->
 
-  <canvas id="janela" width="600" height="600"></canvas>
+  <script src="arbor.js"></script>
+  <script src="arbor-tween.js"></script>
+  <script src="arbor-graphics.js"></script>
+  <script language="javascript" type="text/javascript" src="logica.js" ></script>
 
-  <script type="text/javascript">
-
-      var sys = arbor.ParticleSystem(1000,400,1,true);
-      sys.parameters({gravity:false});
-      sys.renderer = Renderer("#janela");
-
-      var data = {
-        nodes: {
-          Camilo:{
-            "color" : "rgb(70,92,235)",
-            "shape" : "dot",
-            "label" : "Camilo"
-          },
-          Jhon:{
-            "color" : "rgb(235,175,70)",
-            "shape" : "dot",
-            "label" : "Jhon"
-          },
-          Cristian:{
-            "color" : "red",
-            "shape" : "dot",
-            "label" : "Cristian"
-          }
-  },
-  edges : {
-    Camilo: {
-      Jhon: {},
-      Cristian: {}
-    }
-  }
-      };
-
-      sys.graft(data);
-  </script>
 
 </body>
 </html>
